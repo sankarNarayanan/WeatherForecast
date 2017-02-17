@@ -10,12 +10,12 @@ import Foundation
 
 class Wind : NSObject
 {
-    var speed : String = ""
-    var degree : String = ""
+    var speed : Float?
+    var degree : Float?
     
     init(responseDict: Dictionary<String,AnyObject>){
-        self.speed = (responseDict["speed"] as? String) ?? ""
-        self.degree = (responseDict["deg"] as? String) ?? ""
+        self.speed = (responseDict["speed"] as? Float) ?? 0.0
+        self.degree = (responseDict["deg"] as? Float) ?? 0.0
         super.init()
     }
 }

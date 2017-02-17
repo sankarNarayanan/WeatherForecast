@@ -9,22 +9,22 @@
 import Foundation
 
 class Temperature : NSObject {
-    var temp : String?
-    var tempMin : String?
-    var tempMax : String?
-    var pressure : String?
-    var seaLevel: String?
-    var groundLevel : String?
-    var humidity : String?
+    var temp : Float?
+    var tempMin : Float?
+    var tempMax : Float?
+    var pressure : Float?
+    var seaLevel: Float?
+    var groundLevel : Float?
+    var humidity : Float?
     
     init(responseDict: Dictionary<String,AnyObject>){
-        self.temp = (responseDict["temp"] as? String) ?? ""
-        self.tempMin = (responseDict["temp_min"] as? String) ?? ""
-        self.tempMax = (responseDict["temp_max"] as? String) ?? ""
-        self.pressure = (responseDict["pressure"] as? String) ?? ""
-        self.seaLevel = (responseDict["sea_level"] as? String) ?? ""
-        self.groundLevel = (responseDict["grnd_level"] as? String) ?? ""
-        self.humidity = (responseDict["humidity"] as? String) ?? ""
+        self.temp = (responseDict["temp"] as? Float) ?? 0.0
+        self.tempMin = (responseDict["temp_min"] as? Float) ?? 0.0
+        self.tempMax = (responseDict["temp_max"] as? Float) ?? 0.0
+        self.pressure = (responseDict["pressure"] as? Float) ?? 0.0
+        self.seaLevel = (responseDict["sea_level"] as? Float) ?? 0.0
+        self.groundLevel = (responseDict["grnd_level"] as? Float) ?? 0.0
+        self.humidity = (responseDict["humidity"] as? Float) ?? 0.0
         super.init()
     }
     

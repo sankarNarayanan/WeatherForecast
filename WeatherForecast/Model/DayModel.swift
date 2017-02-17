@@ -16,6 +16,10 @@ class DayModel : NSObject
     var date : String?
     var derivedDate : NSDate?
     
+    override init(){
+        super.init()
+    }
+    
     init(temp : Temperature, weather : Waether, wind: Wind, date : String) {
         self.tempertaure = temp
         self.weather = weather

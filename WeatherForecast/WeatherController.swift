@@ -39,6 +39,28 @@ class WeatherController: UIViewController {
 //        // Do any additional setup after loading the view, typically from a nib.
         if let responseDict = self.readJsonFile(fileName: "response") as? Dictionary<String,AnyObject>{
             print(responseDict)
+            var dayModelArray : [DayModel] = [DayModel]()
+            if let listArray = responseDict["list"] as? [Dictionary<String,AnyObject>]{
+                for item in listArray{
+                    let dayModel = DayModel()
+                    if let temperatureDict = item["main"] as? Dictionary<String,AnyObject>{
+                        let tempModel = Temperature(responseDict: temperatureDict)
+                        dayModel.tempertaure = tempModel
+                    }
+                    if let weatherArray = item["weather"] as? [Dictionary<String,AnyObject>]{
+                        for item in weatherArray{
+                            let weatherModel = Waether(responseDict: item)
+                            dayModel.weather = weatherModel
+                        }
+                    }
+                    if let windDict = item["wind"] as? Dictionary<String,AnyObject>{
+                        let windModel = Wind(responseDict: windDict)
+                        dayModel.wind = windModel
+                    }
+                    dayModelArray.append(dayModel)
+                }
+            }
+            print(dayModelArray)
         }
         
         
