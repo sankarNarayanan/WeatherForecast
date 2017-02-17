@@ -183,6 +183,12 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="6b8-5j-t0e"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iet-e8-d4J">
+                                <rect key="frame" x="79.5" y="281" width="46" height="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.23529411764705882" green="0.68235294117647061" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -201,6 +207,7 @@
                             <constraint firstItem="ReM-o2-kQY" firstAttribute="leading" secondItem="hQY-OX-Saw" secondAttribute="trailing" constant="10" id="Ok6-K4-0tF"/>
                             <constraint firstItem="txH-eo-Z6N" firstAttribute="leading" secondItem="hQY-OX-Saw" secondAttribute="trailing" constant="20" id="Qtp-Sk-snD"/>
                             <constraint firstItem="cnT-lB-lWk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="Uok-c3-aNT"/>
+                            <constraint firstItem="iet-e8-d4J" firstAttribute="top" secondItem="hQY-OX-Saw" secondAttribute="bottom" id="Weq-n8-eXJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="flo-i8-BET" secondAttribute="trailing" constant="30" id="WwV-fE-DMq"/>
                             <constraint firstItem="wOl-Fq-Xh5" firstAttribute="top" secondItem="txH-eo-Z6N" secondAttribute="bottom" constant="5" id="XTy-Qr-Aot"/>
                             <constraint firstItem="ReM-o2-kQY" firstAttribute="height" secondItem="hQY-OX-Saw" secondAttribute="height" multiplier="0.2" id="Z5O-8Z-1gS"/>
@@ -209,6 +216,7 @@
                             <constraint firstItem="Mqo-VX-r64" firstAttribute="top" secondItem="prp-OO-XV4" secondAttribute="bottom" constant="10" id="cJf-wx-mbi"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gsG-Fg-ho1" secondAttribute="bottom" id="cKh-Pq-yqk"/>
                             <constraint firstItem="hQY-OX-Saw" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.17" id="dHU-Zz-0Ch"/>
+                            <constraint firstItem="iet-e8-d4J" firstAttribute="centerX" secondItem="hQY-OX-Saw" secondAttribute="centerX" id="f5j-4N-GCS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="txH-eo-Z6N" secondAttribute="trailing" constant="20" id="f7R-pV-mR6"/>
                             <constraint firstItem="wOl-Fq-Xh5" firstAttribute="leading" secondItem="hQY-OX-Saw" secondAttribute="trailing" constant="20" id="hdO-K3-rM6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cnT-lB-lWk" secondAttribute="trailing" constant="10" id="hp1-WQ-gpO"/>
@@ -234,6 +242,7 @@
                         <outlet property="seaLevelLbl" destination="mzr-mN-32G" id="inW-fB-mX6"/>
                         <outlet property="tempMinMaxLbl" destination="prp-OO-XV4" id="JMo-d8-sYl"/>
                         <outlet property="timeStampLbl" destination="OeM-nS-4oT" id="f6h-DP-JyE"/>
+                        <outlet property="weatherPrediction" destination="iet-e8-d4J" id="MGW-qp-LlF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -24,6 +24,7 @@ class WeatherController: WFBaseViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var groundLevelLbl: UILabel!
     @IBOutlet weak var humidityLbl: UILabel!
     @IBOutlet weak var nextDaysTableView: UITableView!
+    @IBOutlet weak var weatherPrediction: UILabel!
     
     
     //MARK: View Controller LifeCycle Methods
@@ -93,6 +94,7 @@ class WeatherController: WFBaseViewController, UITableViewDelegate, UITableViewD
         self.seaLevelLbl.text = "Sea Level : " + String(currentDayModel.tempertaure?.seaLevel ?? 0.0)
         self.groundLevelLbl.text = "Ground Level : " + String(currentDayModel.tempertaure?.groundLevel ?? 0.0)
         self.humidityLbl.text = "Humidity : " + String(currentDayModel.tempertaure?.humidity ?? 0.0)
+        self.weatherPrediction.text = currentDayModel.weather?.desc ?? ""
     }
     
     
