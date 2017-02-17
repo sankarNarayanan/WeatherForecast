@@ -25,6 +25,11 @@ class WebServiceHelper {
         if let responseDict = self.readJsonFile(fileName: "response") as? Dictionary<String,AnyObject>{
             print(responseDict)
             var dayModelArray : [DayModel] = [DayModel]()
+            var city = "", country = ""
+            if let cityNode = responseDict["city"] as? Dictionary<String,AnyObject>{
+                city = cityNode["name"] as? String ?? ""
+                country = cityNode["country"] as? String ?? ""
+            }
             if let listArray = responseDict["list"] as? [Dictionary<String,AnyObject>]{
                 for item in listArray{
                     let dayModel = DayModel()
@@ -43,8 +48,9 @@ class WebServiceHelper {
                         dayModel.wind = windModel
                     }
                     dayModel.date = (item["dt"] as? Double) ?? 0.0
+                    dayModel.city = city
+                    dayModel.country = country
                     dayModel.setDateObject()
-                    
                     if (dayModelArray.count == 0){
                         dayModelArray.append(dayModel)
                     }else{

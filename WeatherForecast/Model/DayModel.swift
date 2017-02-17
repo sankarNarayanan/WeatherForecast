@@ -15,17 +15,20 @@ class DayModel : NSObject
     var wind : Wind?
     var date : Double?
     var derivedDate : Date?
+    var country : String?
+    var city : String?
     
     override init(){
         super.init()
     }
     
-    init(temp : Temperature, weather : Waether, wind: Wind, date : Double) {
+    func setUpData(temp : Temperature, weather : Waether, wind: Wind, date : Double, country : String, city : String) {
         self.tempertaure = temp
         self.weather = weather
         self.wind = wind
         self.date = date
-        super.init()
+        self.country = country
+        self.city = city
     }
     
     func setDateObject(){

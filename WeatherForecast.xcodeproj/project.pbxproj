@@ -45,6 +45,7 @@
 		A0B88BDF1E5754D2005E4E76 /* WebServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BDE1E5754D2005E4E76 /* WebServiceHelper.swift */; };
 		A0B88BE11E5756F4005E4E76 /* WFLoadingSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BE01E5756F4005E4E76 /* WFLoadingSpinner.swift */; };
 		A0B88BE31E57573D005E4E76 /* WFBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BE21E57573D005E4E76 /* WFBaseViewController.swift */; };
+		A0B88BE71E5761F0005E4E76 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BE61E5761F0005E4E76 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		A0B88BDE1E5754D2005E4E76 /* WebServiceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceHelper.swift; sourceTree = "<group>"; };
 		A0B88BE01E5756F4005E4E76 /* WFLoadingSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFLoadingSpinner.swift; sourceTree = "<group>"; };
 		A0B88BE21E57573D005E4E76 /* WFBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFBaseViewController.swift; sourceTree = "<group>"; };
+		A0B88BE61E5761F0005E4E76 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,7 +301,7 @@
 		A0B88BCC1E57095C005E4E76 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A0B88BD01E5734CF005E4E76 /* ResusableCells */,
+				A0B88BD01E5734CF005E4E76 /* ResusableCode */,
 				A0B88ACF1E55B42B005E4E76 /* WeatherController.swift */,
 				A0B88ACD1E55B42B005E4E76 /* AppDelegate.swift */,
 				A0B88B311E55B7C0005E4E76 /* Constants */,
@@ -321,12 +323,13 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		A0B88BD01E5734CF005E4E76 /* ResusableCells */ = {
+		A0B88BD01E5734CF005E4E76 /* ResusableCode */ = {
 			isa = PBXGroup;
 			children = (
 				A0B88BD11E5734EF005E4E76 /* WFNextDayCell.swift */,
+				A0B88BE61E5761F0005E4E76 /* Extensions.swift */,
 			);
-			name = ResusableCells;
+			name = ResusableCode;
 			sourceTree = "<group>";
 		};
 		A0B88BD31E5735D3005E4E76 /* Model */ = {
@@ -509,6 +512,7 @@
 				A0B88BD51E57367B005E4E76 /* Temperature.swift in Sources */,
 				A0B88BC81E55C498005E4E76 /* OperationQueue.swift in Sources */,
 				A0B88BC01E55C498005E4E76 /* BlockObserver.swift in Sources */,
+				A0B88BE71E5761F0005E4E76 /* Extensions.swift in Sources */,
 				A0B88BC91E55C498005E4E76 /* RequestModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
