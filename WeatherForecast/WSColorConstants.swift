@@ -11,12 +11,12 @@ import UIKit
 
 struct WFColors{
     static let baseBlueColor = UIColor.colorWithHexValue(hexValue: "#3CAEDA")
-    static let tableViewColors =  [UIColor.colorWithHexValue(hexValue: "#43a047"),
-                                   UIColor.colorWithHexValue(hexValue: "#00c853"),
-                                   UIColor.colorWithHexValue(hexValue: "#64dd17"),
-                                   UIColor.colorWithHexValue(hexValue: "#aeea00"),
-                                   UIColor.colorWithHexValue(hexValue: "#d4e157")]
-    static let darkBlueColor = UIColor.colorWithHexValue(hexValue: "#303f9f")
+    static let tableViewColors =  [UIColor.colorWithHexValue(hexValue: "#ffb74d"),
+                                   UIColor.colorWithHexValue(hexValue: "#ffa726"),
+                                   UIColor.colorWithHexValue(hexValue: "#ff9800"),
+                                   UIColor.colorWithHexValue(hexValue: "#fb8c00"),
+                                   UIColor.colorWithHexValue(hexValue: "#f57c00")]
+    static let darkBlueColor = UIColor.colorWithHexValue(hexValue: "#2962ff")
 }
 
 
