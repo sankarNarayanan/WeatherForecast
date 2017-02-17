@@ -13,14 +13,14 @@ class DayModel : NSObject
     var tempertaure : Temperature?
     var weather : Waether?
     var wind : Wind?
-    var date : String?
-    var derivedDate : NSDate?
+    var date : Double?
+    var derivedDate : Date?
     
     override init(){
         super.init()
     }
     
-    init(temp : Temperature, weather : Waether, wind: Wind, date : String) {
+    init(temp : Temperature, weather : Waether, wind: Wind, date : Double) {
         self.tempertaure = temp
         self.weather = weather
         self.wind = wind
@@ -28,7 +28,8 @@ class DayModel : NSObject
         super.init()
     }
     
-    func getDateObject() -> NSDate{
-        return NSDate(timeIntervalSince1970: Double(self.date ?? "") ?? 0)
+    func setDateObject(){
+        let date = Date(timeIntervalSince1970: self.date ?? 0.0)
+        self.derivedDate = date
     }
 }

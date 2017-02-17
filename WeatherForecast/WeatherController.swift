@@ -57,7 +57,21 @@ class WeatherController: UIViewController {
                         let windModel = Wind(responseDict: windDict)
                         dayModel.wind = windModel
                     }
-                    dayModelArray.append(dayModel)
+                    dayModel.date = (item["dt"] as? Double) ?? 0.0
+                    dayModel.setDateObject()
+                    
+                    if (dayModelArray.count == 0){
+                        dayModelArray.append(dayModel)
+                    }else{
+                        let count = dayModelArray.count
+                        let dayModelInArray = dayModelArray[count-1]
+                        let differenceInHours = dayModel.derivedDate?.hours(from: dayModelInArray.derivedDate ?? Date())
+                        if (differenceInHours == 24){
+                            dayModelArray.append(dayModel)
+                        }
+                    }
+                    
+                    
                 }
             }
             print(dayModelArray)
