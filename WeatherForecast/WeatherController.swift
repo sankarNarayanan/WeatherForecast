@@ -8,8 +8,8 @@
 
 import UIKit
 
-class WeatherController: UIViewController {
-
+class WeatherController: WFBaseViewController {
+    
     
     //MARK: iboutlets
     @IBOutlet weak var locationLbl: UILabel!
@@ -26,13 +26,19 @@ class WeatherController: UIViewController {
     //MARK: View Controller LifeCycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.showActivityView()
+        WebServiceHelper.getWetherData(completionHandler: {(response: [DayModel]?) -> Void in
+            DispatchQueue.main.async  {
+                self.hideActivityView()
+            }
+        })
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 

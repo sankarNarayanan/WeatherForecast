@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class WebServiceHelper {
-    static func getWetherData(){
+    static func getWetherData(completionHandler : @escaping (_ response: [DayModel]?) -> Void){
         //        let requestModel = RequestModel()
         //        requestModel.url = AppConstants.urlString
         //        requestModel.requestType = "GET"
@@ -55,12 +55,11 @@ class WebServiceHelper {
                             dayModelArray.append(dayModel)
                         }
                     }
-                    
-                    
                 }
             }
             let appDelegate = UIApplication.shared.delegate as? AppDelegate
             appDelegate?.weatherForecastArray = dayModelArray
+            completionHandler(dayModelArray)
         }
     }
     

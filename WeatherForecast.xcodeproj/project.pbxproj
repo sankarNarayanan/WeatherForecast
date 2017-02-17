@@ -43,6 +43,8 @@
 		A0B88BDB1E5736A8005E4E76 /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BDA1E5736A8005E4E76 /* Wind.swift */; };
 		A0B88BDD1E5736C4005E4E76 /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BDC1E5736C4005E4E76 /* DayModel.swift */; };
 		A0B88BDF1E5754D2005E4E76 /* WebServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BDE1E5754D2005E4E76 /* WebServiceHelper.swift */; };
+		A0B88BE11E5756F4005E4E76 /* WFLoadingSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BE01E5756F4005E4E76 /* WFLoadingSpinner.swift */; };
+		A0B88BE31E57573D005E4E76 /* WFBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BE21E57573D005E4E76 /* WFBaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,8 @@
 		A0B88BDA1E5736A8005E4E76 /* Wind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Wind.swift; path = Model/Wind.swift; sourceTree = "<group>"; };
 		A0B88BDC1E5736C4005E4E76 /* DayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayModel.swift; path = Model/DayModel.swift; sourceTree = "<group>"; };
 		A0B88BDE1E5754D2005E4E76 /* WebServiceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceHelper.swift; sourceTree = "<group>"; };
+		A0B88BE01E5756F4005E4E76 /* WFLoadingSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFLoadingSpinner.swift; sourceTree = "<group>"; };
+		A0B88BE21E57573D005E4E76 /* WFBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFBaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +305,7 @@
 				A0B88B311E55B7C0005E4E76 /* Constants */,
 				A0B88AFB1E55B444005E4E76 /* NetworkManager */,
 				A0B88BDE1E5754D2005E4E76 /* WebServiceHelper.swift */,
+				A0B88BE21E57573D005E4E76 /* WFBaseViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -311,6 +316,7 @@
 				A0B88AD11E55B42B005E4E76 /* Main.storyboard */,
 				A0B88AD41E55B42B005E4E76 /* Assets.xcassets */,
 				A0B88AD61E55B42B005E4E76 /* LaunchScreen.storyboard */,
+				A0B88BE01E5756F4005E4E76 /* WFLoadingSpinner.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -475,6 +481,7 @@
 				A0B88BB51E55C498005E4E76 /* AlertOperation.swift in Sources */,
 				A0B88BBC1E55C498005E4E76 /* OperationErrors.swift in Sources */,
 				A0B88BC51E55C498005E4E76 /* Operation.swift in Sources */,
+				A0B88BE11E5756F4005E4E76 /* WFLoadingSpinner.swift in Sources */,
 				A0B88AD01E55B42B005E4E76 /* WeatherController.swift in Sources */,
 				A0B88BB81E55C498005E4E76 /* ParseOperation.swift in Sources */,
 				A0B88BB91E55C498005E4E76 /* RequestOperation.swift in Sources */,
@@ -483,6 +490,7 @@
 				A0B88BCF1E5718A7005E4E76 /* WSColorConstants.swift in Sources */,
 				A0B88BBA1E55C498005E4E76 /* MutuallyExclusive.swift in Sources */,
 				A0B88B331E55B7D2005E4E76 /* WFConstants.swift in Sources */,
+				A0B88BE31E57573D005E4E76 /* WFBaseViewController.swift in Sources */,
 				A0B88BB61E55C498005E4E76 /* ConnectionOperation.swift in Sources */,
 				A0B88BD21E5734EF005E4E76 /* WFNextDayCell.swift in Sources */,
 				A0B88BBF1E55C498005E4E76 /* NSOperation+Operations.swift in Sources */,
