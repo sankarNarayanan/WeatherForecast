@@ -14,6 +14,7 @@ class WFNextDayCell: UITableViewCell {
     @IBOutlet weak var dateLbl: UILabel!
     @IBOutlet weak var timeLbl: UILabel!
     @IBOutlet weak var tempImageView: UIImageView!
+    @IBOutlet weak var weatherMainLbl: UILabel!
     @IBOutlet weak var weatherDesc: UILabel!
     
     //MARK: Model variable
@@ -32,6 +33,7 @@ class WFNextDayCell: UITableViewCell {
         let result = formatter.string(from: date)
         self.dateLbl.text = result
         self.weatherDesc.text = currentDayModel.weather?.desc ?? ""
+        self.weatherMainLbl.text = currentDayModel.weather?.main ?? ""
     }
     
     
