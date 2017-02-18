@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -260,7 +261,18 @@
                     <view key="view" contentMode="scaleToFill" id="kbe-NT-Fhr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="i7I-LB-gNe">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" red="0.23529411764705882" green="0.68235294117647061" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="i7I-LB-gNe" secondAttribute="trailingMargin" id="QOW-zB-6Ho"/>
+                            <constraint firstItem="i85-gz-CYY" firstAttribute="top" secondItem="i7I-LB-gNe" secondAttribute="bottomMargin" id="dc5-eA-2vg"/>
+                            <constraint firstItem="i7I-LB-gNe" firstAttribute="top" secondItem="0tT-3h-GJm" secondAttribute="bottom" id="nEV-aL-Wji"/>
+                            <constraint firstItem="i7I-LB-gNe" firstAttribute="leading" secondItem="kbe-NT-Fhr" secondAttribute="leading" id="p2t-tE-Nib"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Select Location" id="xbK-3R-Mhd"/>
                 </viewController>

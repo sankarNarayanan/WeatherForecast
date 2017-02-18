@@ -16,7 +16,6 @@ class WebServiceHelper {
         requestModel.requestType = "GET"
         let connectionOperation = ConnectionOperation(withRequestObject: requestModel, andCompletionHandler:{(response: AnyObject?, responseHeaders: AnyObject?, error: AnyObject?) -> Void in
             if let responseDict = response as? NSDictionary{
-                print(responseDict)
                 var dayModelArray : [DayModel] = [DayModel]()
                 var city = "", country = ""
                 if let cityNode = responseDict["city"] as? Dictionary<String,AnyObject>{
