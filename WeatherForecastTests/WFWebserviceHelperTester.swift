@@ -1,15 +1,15 @@
 //
-//  WeatherForecastTests.swift
-//  WeatherForecastTests
+//  WFWebserviceHelperTester.swift
+//  WeatherForecast
 //
-//  Created by Sankar Narayanan on 16/02/17.
+//  Created by Sankar Narayanan on 24/02/17.
 //  Copyright © 2017 Sankar Narayanan. All rights reserved.
 //
 
 import XCTest
 @testable import WeatherForecast
 
-class WeatherForecastTests: XCTestCase {
+class WFWebserviceHelperTester: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -32,5 +32,15 @@ class WeatherForecastTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testDayModelCreation(){
+        let fileName = "DayModel"
+        let webServiceHelper = WebServiceHelper()
+        let dict = webServiceHelper.readJsonFile(fileName: fileName) as! Dictionary<String,AnyObject>
+        let dayModel : DayModel = webServiceHelper.getDayModel(item: dict, city: "chennai", country: "IN")
+        XCTAssertEqual([dayModel.city ?? "", dayModel.country ?? ""], ["chennai", "IN"], "Day model variables compared")
+    }
+    
+    
     
 }

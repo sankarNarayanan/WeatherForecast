@@ -29,6 +29,8 @@
 		A0B88BE31E57573D005E4E76 /* WFBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BE21E57573D005E4E76 /* WFBaseViewController.swift */; };
 		A0B88BE71E5761F0005E4E76 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BE61E5761F0005E4E76 /* Extensions.swift */; };
 		A0DAABF11E600E99006D4615 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DAABF01E600E99006D4615 /* NetworkController.swift */; };
+		A0DAABF31E604147006D4615 /* WFWebserviceHelperTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DAABF21E604147006D4615 /* WFWebserviceHelperTester.swift */; };
+		A0DAABF51E6041F9006D4615 /* DayModel.json in Resources */ = {isa = PBXBuildFile; fileRef = A0DAABF41E6041F9006D4615 /* DayModel.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		A0B88BE21E57573D005E4E76 /* WFBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFBaseViewController.swift; sourceTree = "<group>"; };
 		A0B88BE61E5761F0005E4E76 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A0DAABF01E600E99006D4615 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		A0DAABF21E604147006D4615 /* WFWebserviceHelperTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFWebserviceHelperTester.swift; sourceTree = "<group>"; };
+		A0DAABF41E6041F9006D4615 /* DayModel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = DayModel.json; path = Resources/DayModel.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 			children = (
 				A0B88AE21E55B42B005E4E76 /* WeatherForecastTests.swift */,
 				A0B88AE41E55B42B005E4E76 /* Info.plist */,
+				A0DAABF21E604147006D4615 /* WFWebserviceHelperTester.swift */,
 			);
 			path = WeatherForecastTests;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 			children = (
 				A0B88AD91E55B42B005E4E76 /* Info.plist */,
 				A0B88B2F1E55B795005E4E76 /* response.json */,
+				A0DAABF41E6041F9006D4615 /* DayModel.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -341,6 +347,7 @@
 				A0B88AD81E55B42B005E4E76 /* LaunchScreen.storyboard in Resources */,
 				A0B88AD51E55B42B005E4E76 /* Assets.xcassets in Resources */,
 				A0B88AD31E55B42B005E4E76 /* Main.storyboard in Resources */,
+				A0DAABF51E6041F9006D4615 /* DayModel.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0DAABF31E604147006D4615 /* WFWebserviceHelperTester.swift in Sources */,
 				A0B88AE31E55B42B005E4E76 /* WeatherForecastTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
