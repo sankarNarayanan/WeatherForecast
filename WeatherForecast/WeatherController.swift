@@ -31,7 +31,8 @@ class WeatherController: WFBaseViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         self.showActivityView()
-        WebServiceHelper.getWetherData(completionHandler: {(response: [DayModel]?) -> Void in
+        let webServiceHelper:WebServiceHelper = WebServiceHelper()
+        webServiceHelper.getWetherData(completionHandler: {(response: [DayModel]?) -> Void in
             DispatchQueue.main.async  {
                 self.weatherDayArray = response ?? [DayModel]()
                 self.nextDaysTableView.reloadData()
