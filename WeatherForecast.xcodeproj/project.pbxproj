@@ -17,25 +17,6 @@
 		A0B88AEE1E55B42B005E4E76 /* WeatherForecastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88AED1E55B42B005E4E76 /* WeatherForecastUITests.swift */; };
 		A0B88B301E55B795005E4E76 /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = A0B88B2F1E55B795005E4E76 /* response.json */; };
 		A0B88B331E55B7D2005E4E76 /* WFConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88B321E55B7D2005E4E76 /* WFConstants.swift */; };
-		A0B88BB51E55C498005E4E76 /* AlertOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88B9A1E55C498005E4E76 /* AlertOperation.swift */; };
-		A0B88BB61E55C498005E4E76 /* ConnectionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88B9B1E55C498005E4E76 /* ConnectionOperation.swift */; };
-		A0B88BB71E55C498005E4E76 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88B9C1E55C498005E4E76 /* NetworkOperation.swift */; };
-		A0B88BB81E55C498005E4E76 /* ParseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88B9D1E55C498005E4E76 /* ParseOperation.swift */; };
-		A0B88BB91E55C498005E4E76 /* RequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88B9E1E55C498005E4E76 /* RequestOperation.swift */; };
-		A0B88BBA1E55C498005E4E76 /* MutuallyExclusive.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BA01E55C498005E4E76 /* MutuallyExclusive.swift */; };
-		A0B88BBB1E55C498005E4E76 /* OperationCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BA11E55C498005E4E76 /* OperationCondition.swift */; };
-		A0B88BBC1E55C498005E4E76 /* OperationErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BA21E55C498005E4E76 /* OperationErrors.swift */; };
-		A0B88BBD1E55C498005E4E76 /* ReachabilityCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BA31E55C498005E4E76 /* ReachabilityCondition.swift */; };
-		A0B88BBE1E55C498005E4E76 /* NSLock+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BA51E55C498005E4E76 /* NSLock+Operations.swift */; };
-		A0B88BBF1E55C498005E4E76 /* NSOperation+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BA61E55C498005E4E76 /* NSOperation+Operations.swift */; };
-		A0B88BC01E55C498005E4E76 /* BlockObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BA81E55C498005E4E76 /* BlockObserver.swift */; };
-		A0B88BC11E55C498005E4E76 /* OperationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BA91E55C498005E4E76 /* OperationObserver.swift */; };
-		A0B88BC31E55C498005E4E76 /* GroupOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BAC1E55C498005E4E76 /* GroupOperation.swift */; };
-		A0B88BC41E55C498005E4E76 /* LocationOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BAD1E55C498005E4E76 /* LocationOperation.swift */; };
-		A0B88BC51E55C498005E4E76 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BAE1E55C498005E4E76 /* Operation.swift */; };
-		A0B88BC61E55C498005E4E76 /* URLSessionTaskOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BAF1E55C498005E4E76 /* URLSessionTaskOperation.swift */; };
-		A0B88BC71E55C498005E4E76 /* ExclusivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BB11E55C498005E4E76 /* ExclusivityController.swift */; };
-		A0B88BC81E55C498005E4E76 /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BB21E55C498005E4E76 /* OperationQueue.swift */; };
 		A0B88BC91E55C498005E4E76 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BB41E55C498005E4E76 /* RequestModel.swift */; };
 		A0B88BCF1E5718A7005E4E76 /* WSColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BCE1E5718A7005E4E76 /* WSColorConstants.swift */; };
 		A0B88BD21E5734EF005E4E76 /* WFNextDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BD11E5734EF005E4E76 /* WFNextDayCell.swift */; };
@@ -47,6 +28,7 @@
 		A0B88BE11E5756F4005E4E76 /* WFLoadingSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BE01E5756F4005E4E76 /* WFLoadingSpinner.swift */; };
 		A0B88BE31E57573D005E4E76 /* WFBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BE21E57573D005E4E76 /* WFBaseViewController.swift */; };
 		A0B88BE71E5761F0005E4E76 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BE61E5761F0005E4E76 /* Extensions.swift */; };
+		A0DAABF11E600E99006D4615 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DAABF01E600E99006D4615 /* NetworkController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,27 +65,7 @@
 		A0B88AEF1E55B42B005E4E76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0B88B2F1E55B795005E4E76 /* response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = response.json; path = Resources/response.json; sourceTree = "<group>"; };
 		A0B88B321E55B7D2005E4E76 /* WFConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFConstants.swift; sourceTree = "<group>"; };
-		A0B88B9A1E55C498005E4E76 /* AlertOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertOperation.swift; sourceTree = "<group>"; };
-		A0B88B9B1E55C498005E4E76 /* ConnectionOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionOperation.swift; sourceTree = "<group>"; };
-		A0B88B9C1E55C498005E4E76 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
-		A0B88B9D1E55C498005E4E76 /* ParseOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseOperation.swift; sourceTree = "<group>"; };
-		A0B88B9E1E55C498005E4E76 /* RequestOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestOperation.swift; sourceTree = "<group>"; };
-		A0B88BA01E55C498005E4E76 /* MutuallyExclusive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutuallyExclusive.swift; sourceTree = "<group>"; };
-		A0B88BA11E55C498005E4E76 /* OperationCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationCondition.swift; sourceTree = "<group>"; };
-		A0B88BA21E55C498005E4E76 /* OperationErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationErrors.swift; sourceTree = "<group>"; };
-		A0B88BA31E55C498005E4E76 /* ReachabilityCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityCondition.swift; sourceTree = "<group>"; };
-		A0B88BA51E55C498005E4E76 /* NSLock+Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLock+Operations.swift"; sourceTree = "<group>"; };
-		A0B88BA61E55C498005E4E76 /* NSOperation+Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSOperation+Operations.swift"; sourceTree = "<group>"; };
-		A0B88BA81E55C498005E4E76 /* BlockObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockObserver.swift; sourceTree = "<group>"; };
-		A0B88BA91E55C498005E4E76 /* OperationObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationObserver.swift; sourceTree = "<group>"; };
-		A0B88BAB1E55C498005E4E76 /* BlockOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockOperation.swift; sourceTree = "<group>"; };
-		A0B88BAC1E55C498005E4E76 /* GroupOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupOperation.swift; sourceTree = "<group>"; };
-		A0B88BAD1E55C498005E4E76 /* LocationOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationOperation.swift; sourceTree = "<group>"; };
-		A0B88BAE1E55C498005E4E76 /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
-		A0B88BAF1E55C498005E4E76 /* URLSessionTaskOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionTaskOperation.swift; sourceTree = "<group>"; };
-		A0B88BB11E55C498005E4E76 /* ExclusivityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExclusivityController.swift; sourceTree = "<group>"; };
-		A0B88BB21E55C498005E4E76 /* OperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationQueue.swift; sourceTree = "<group>"; };
-		A0B88BB41E55C498005E4E76 /* RequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		A0B88BB41E55C498005E4E76 /* RequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestModel.swift; path = RequestModel/RequestModel.swift; sourceTree = "<group>"; };
 		A0B88BCE1E5718A7005E4E76 /* WSColorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSColorConstants.swift; sourceTree = "<group>"; };
 		A0B88BD11E5734EF005E4E76 /* WFNextDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFNextDayCell.swift; sourceTree = "<group>"; };
 		A0B88BD41E57367B005E4E76 /* Temperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Temperature.swift; path = Model/Temperature.swift; sourceTree = "<group>"; };
@@ -114,6 +76,7 @@
 		A0B88BE01E5756F4005E4E76 /* WFLoadingSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFLoadingSpinner.swift; sourceTree = "<group>"; };
 		A0B88BE21E57573D005E4E76 /* WFBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFBaseViewController.swift; sourceTree = "<group>"; };
 		A0B88BE61E5761F0005E4E76 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A0DAABF01E600E99006D4615 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,15 +163,6 @@
 			path = WeatherForecastUITests;
 			sourceTree = "<group>";
 		};
-		A0B88AFB1E55B444005E4E76 /* NetworkManager */ = {
-			isa = PBXGroup;
-			children = (
-				A0B88B981E55C498005E4E76 /* Operations */,
-				A0B88BB31E55C498005E4E76 /* RequestModel */,
-			);
-			name = NetworkManager;
-			sourceTree = "<group>";
-		};
 		A0B88B2E1E55B77B005E4E76 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,89 +181,6 @@
 			name = Constants;
 			sourceTree = "<group>";
 		};
-		A0B88B981E55C498005E4E76 /* Operations */ = {
-			isa = PBXGroup;
-			children = (
-				A0B88B991E55C498005E4E76 /* AppOperations */,
-				A0B88B9F1E55C498005E4E76 /* Conditions */,
-				A0B88BA41E55C498005E4E76 /* Extensions */,
-				A0B88BA71E55C498005E4E76 /* Observers */,
-				A0B88BAA1E55C498005E4E76 /* Operations */,
-				A0B88BB01E55C498005E4E76 /* OperationsQueue */,
-			);
-			path = Operations;
-			sourceTree = "<group>";
-		};
-		A0B88B991E55C498005E4E76 /* AppOperations */ = {
-			isa = PBXGroup;
-			children = (
-				A0B88B9A1E55C498005E4E76 /* AlertOperation.swift */,
-				A0B88B9B1E55C498005E4E76 /* ConnectionOperation.swift */,
-				A0B88B9C1E55C498005E4E76 /* NetworkOperation.swift */,
-				A0B88B9D1E55C498005E4E76 /* ParseOperation.swift */,
-				A0B88B9E1E55C498005E4E76 /* RequestOperation.swift */,
-			);
-			path = AppOperations;
-			sourceTree = "<group>";
-		};
-		A0B88B9F1E55C498005E4E76 /* Conditions */ = {
-			isa = PBXGroup;
-			children = (
-				A0B88BA01E55C498005E4E76 /* MutuallyExclusive.swift */,
-				A0B88BA11E55C498005E4E76 /* OperationCondition.swift */,
-				A0B88BA21E55C498005E4E76 /* OperationErrors.swift */,
-				A0B88BA31E55C498005E4E76 /* ReachabilityCondition.swift */,
-			);
-			path = Conditions;
-			sourceTree = "<group>";
-		};
-		A0B88BA41E55C498005E4E76 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				A0B88BA51E55C498005E4E76 /* NSLock+Operations.swift */,
-				A0B88BA61E55C498005E4E76 /* NSOperation+Operations.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		A0B88BA71E55C498005E4E76 /* Observers */ = {
-			isa = PBXGroup;
-			children = (
-				A0B88BA81E55C498005E4E76 /* BlockObserver.swift */,
-				A0B88BA91E55C498005E4E76 /* OperationObserver.swift */,
-			);
-			path = Observers;
-			sourceTree = "<group>";
-		};
-		A0B88BAA1E55C498005E4E76 /* Operations */ = {
-			isa = PBXGroup;
-			children = (
-				A0B88BAB1E55C498005E4E76 /* BlockOperation.swift */,
-				A0B88BAC1E55C498005E4E76 /* GroupOperation.swift */,
-				A0B88BAD1E55C498005E4E76 /* LocationOperation.swift */,
-				A0B88BAE1E55C498005E4E76 /* Operation.swift */,
-				A0B88BAF1E55C498005E4E76 /* URLSessionTaskOperation.swift */,
-			);
-			path = Operations;
-			sourceTree = "<group>";
-		};
-		A0B88BB01E55C498005E4E76 /* OperationsQueue */ = {
-			isa = PBXGroup;
-			children = (
-				A0B88BB11E55C498005E4E76 /* ExclusivityController.swift */,
-				A0B88BB21E55C498005E4E76 /* OperationQueue.swift */,
-			);
-			path = OperationsQueue;
-			sourceTree = "<group>";
-		};
-		A0B88BB31E55C498005E4E76 /* RequestModel */ = {
-			isa = PBXGroup;
-			children = (
-				A0B88BB41E55C498005E4E76 /* RequestModel.swift */,
-			);
-			path = RequestModel;
-			sourceTree = "<group>";
-		};
 		A0B88BCC1E57095C005E4E76 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -317,9 +188,9 @@
 				A0B88ACF1E55B42B005E4E76 /* WeatherController.swift */,
 				A0B88ACD1E55B42B005E4E76 /* AppDelegate.swift */,
 				A0B88B311E55B7C0005E4E76 /* Constants */,
-				A0B88AFB1E55B444005E4E76 /* NetworkManager */,
 				A0B88BDE1E5754D2005E4E76 /* WebServiceHelper.swift */,
 				A0B88BE21E57573D005E4E76 /* WFBaseViewController.swift */,
+				A0DAABF01E600E99006D4615 /* NetworkController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -347,6 +218,7 @@
 		A0B88BD31E5735D3005E4E76 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A0B88BB41E55C498005E4E76 /* RequestModel.swift */,
 				A0B88BD41E57367B005E4E76 /* Temperature.swift */,
 				A0B88BD61E573689005E4E76 /* Weather.swift */,
 				A0B88BDA1E5736A8005E4E76 /* Wind.swift */,
@@ -493,37 +365,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0B88BB51E55C498005E4E76 /* AlertOperation.swift in Sources */,
-				A0B88BBC1E55C498005E4E76 /* OperationErrors.swift in Sources */,
-				A0B88BC51E55C498005E4E76 /* Operation.swift in Sources */,
 				A0B88BE11E5756F4005E4E76 /* WFLoadingSpinner.swift in Sources */,
 				A0B88AD01E55B42B005E4E76 /* WeatherController.swift in Sources */,
-				A0B88BB81E55C498005E4E76 /* ParseOperation.swift in Sources */,
-				A0B88BB91E55C498005E4E76 /* RequestOperation.swift in Sources */,
 				A0B88BDD1E5736C4005E4E76 /* DayModel.swift in Sources */,
-				A0B88BC71E55C498005E4E76 /* ExclusivityController.swift in Sources */,
 				A0B88BCF1E5718A7005E4E76 /* WSColorConstants.swift in Sources */,
-				A0B88BBA1E55C498005E4E76 /* MutuallyExclusive.swift in Sources */,
 				A0B88B331E55B7D2005E4E76 /* WFConstants.swift in Sources */,
 				A0B88BE31E57573D005E4E76 /* WFBaseViewController.swift in Sources */,
-				A0B88BB61E55C498005E4E76 /* ConnectionOperation.swift in Sources */,
 				A0B88BD21E5734EF005E4E76 /* WFNextDayCell.swift in Sources */,
-				A0B88BBF1E55C498005E4E76 /* NSOperation+Operations.swift in Sources */,
 				A0B88BD71E573689005E4E76 /* Weather.swift in Sources */,
-				A0B88BB71E55C498005E4E76 /* NetworkOperation.swift in Sources */,
 				A0B88BDF1E5754D2005E4E76 /* WebServiceHelper.swift in Sources */,
 				A0B88ACE1E55B42B005E4E76 /* AppDelegate.swift in Sources */,
+				A0DAABF11E600E99006D4615 /* NetworkController.swift in Sources */,
 				A0B88BDB1E5736A8005E4E76 /* Wind.swift in Sources */,
-				A0B88BC61E55C498005E4E76 /* URLSessionTaskOperation.swift in Sources */,
-				A0B88BC41E55C498005E4E76 /* LocationOperation.swift in Sources */,
-				A0B88BC11E55C498005E4E76 /* OperationObserver.swift in Sources */,
-				A0B88BC31E55C498005E4E76 /* GroupOperation.swift in Sources */,
-				A0B88BBE1E55C498005E4E76 /* NSLock+Operations.swift in Sources */,
-				A0B88BBD1E55C498005E4E76 /* ReachabilityCondition.swift in Sources */,
-				A0B88BBB1E55C498005E4E76 /* OperationCondition.swift in Sources */,
 				A0B88BD51E57367B005E4E76 /* Temperature.swift in Sources */,
-				A0B88BC81E55C498005E4E76 /* OperationQueue.swift in Sources */,
-				A0B88BC01E55C498005E4E76 /* BlockObserver.swift in Sources */,
 				A0B88BE71E5761F0005E4E76 /* Extensions.swift in Sources */,
 				A0B88BC91E55C498005E4E76 /* RequestModel.swift in Sources */,
 			);

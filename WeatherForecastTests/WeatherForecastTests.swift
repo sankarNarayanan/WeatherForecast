@@ -33,4 +33,8 @@ class WeatherForecastTests: XCTestCase {
         }
     }
     
+    func testWebservice(){
+        assert(false)
+    }
+    
 }

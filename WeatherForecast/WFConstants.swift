@@ -11,4 +11,6 @@ import Foundation
 
 struct AppConstants{
     static let urlString = "http://api.openweathermap.org/data/2.5/forecast?id=1264527&mode=json&appid=8b48c52911816b88b73c5007a4f06197"
+    static let httpPostMethod = "POST"
+    static let httpGetMethod = "GET"
 }

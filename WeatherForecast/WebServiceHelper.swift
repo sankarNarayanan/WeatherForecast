@@ -14,7 +14,8 @@ class WebServiceHelper {
         let requestModel = RequestModel()
         requestModel.url = AppConstants.urlString
         requestModel.requestType = "GET"
-        let connectionOperation = ConnectionOperation(withRequestObject: requestModel, andCompletionHandler:{(response: AnyObject?, responseHeaders: AnyObject?, error: AnyObject?) -> Void in
+        
+        NetworkController.makeWebServiceCall(requestModel: requestModel, callback: {(response : AnyObject?, error : NSError?) -> Void in
             if let responseDict = response as? NSDictionary{
                 var dayModelArray : [DayModel] = [DayModel]()
                 var city = "", country = ""
@@ -60,8 +61,6 @@ class WebServiceHelper {
                 completionHandler(dayModelArray)
             }
         })
-        let operationQueue = AppOperationQueue()
-        operationQueue.addOperation(connectionOperation)
     }
     
     static func readJsonFile(fileName: String) -> NSDictionary{
