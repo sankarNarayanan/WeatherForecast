@@ -82,6 +82,8 @@ class WeatherController: WFBaseViewController, UITableViewDelegate, UITableViewD
         self.setUpViewData(currentDayModel: currentDayModel)
     }
     
+    
+    //To set up upper container
     func setUpViewData(currentDayModel : DayModel){
         self.locationLbl.text = (currentDayModel.city ?? "") + "," + (currentDayModel.country ?? "")
         let formatter = DateFormatter()

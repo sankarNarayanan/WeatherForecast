@@ -198,6 +198,7 @@
 		A0B88BCD1E570978005E4E76 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A0B88BD11E5734EF005E4E76 /* WFNextDayCell.swift */,
 				A0B88AD11E55B42B005E4E76 /* Main.storyboard */,
 				A0B88AD41E55B42B005E4E76 /* Assets.xcassets */,
 				A0B88AD61E55B42B005E4E76 /* LaunchScreen.storyboard */,
@@ -209,7 +210,6 @@
 		A0B88BD01E5734CF005E4E76 /* ResusableCode */ = {
 			isa = PBXGroup;
 			children = (
-				A0B88BD11E5734EF005E4E76 /* WFNextDayCell.swift */,
 				A0B88BE61E5761F0005E4E76 /* Extensions.swift */,
 			);
 			name = ResusableCode;
