@@ -81,10 +81,10 @@ class WebServiceHelper {
     func readJsonFile(fileName: String) -> NSDictionary{
         var jsonResult:NSDictionary = NSDictionary()
         do {
-            let path = Bundle.main.path(forResource: fileName, ofType: "json")
-            let data = try NSData(contentsOfFile: (path)!, options: NSData.ReadingOptions.uncached)
-            
-            jsonResult = try JSONSerialization.jsonObject(with: data as Data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
+            if let path = Bundle.main.path(forResource: fileName, ofType: "json"){
+                let data = try NSData(contentsOfFile: (path), options: NSData.ReadingOptions.uncached)
+                jsonResult = try JSONSerialization.jsonObject(with: data as Data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
+            }
         }catch _{
             
         }
