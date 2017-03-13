@@ -50,6 +50,13 @@
 			remoteGlobalIDString = A0B88AC91E55B42B005E4E76;
 			remoteInfo = WeatherForecast;
 		};
+		A0F5A6A41E76973A006F63B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0B88AC21E55B42B005E4E76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0B88ADD1E55B42B005E4E76;
+			remoteInfo = WeatherForecastTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -253,6 +260,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A0F5A6A51E76973A006F63B9 /* PBXTargetDependency */,
 			);
 			name = WeatherForecast;
 			productName = WeatherForecast;
@@ -427,6 +435,11 @@
 			isa = PBXTargetDependency;
 			target = A0B88AC91E55B42B005E4E76 /* WeatherForecast */;
 			targetProxy = A0B88AEA1E55B42B005E4E76 /* PBXContainerItemProxy */;
+		};
+		A0F5A6A51E76973A006F63B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0B88ADD1E55B42B005E4E76 /* WeatherForecastTests */;
+			targetProxy = A0F5A6A41E76973A006F63B9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
