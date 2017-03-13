@@ -91,8 +91,8 @@ class WeatherController: WFBaseViewController, UITableViewDelegate, UITableViewD
         formatter.dateFormat = "dd MMM yyyy, HH:MM"
         let result = formatter.string(from: currentDayModel.derivedDate ?? Date())
         self.timeStampLbl.text = result
-        self.optimalTempLbl.text = String(currentDayModel.tempertaure?.temp ?? 0.0)
-        self.tempMinMaxLbl.text = String(currentDayModel.tempertaure?.tempMin ?? 0.0) + "/" + String(currentDayModel.tempertaure?.tempMax ?? 0.0)
+        self.optimalTempLbl.text = String(currentDayModel.tempertaure?.temp ?? 0.0) + "°C"
+        self.tempMinMaxLbl.text = String(currentDayModel.tempertaure?.tempMin ?? 0.0) + "°C" + "/" + String(currentDayModel.tempertaure?.tempMax ?? 0.0) + "°C"
         self.pressureLbl.text = "Pressure : " + String(currentDayModel.tempertaure?.pressure ?? 0.0)
         self.seaLevelLbl.text = "Sea Level : " + String(currentDayModel.tempertaure?.seaLevel ?? 0.0)
         self.groundLevelLbl.text = "Ground Level : " + String(currentDayModel.tempertaure?.groundLevel ?? 0.0)
