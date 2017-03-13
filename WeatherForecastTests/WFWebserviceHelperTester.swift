@@ -10,35 +10,37 @@ import XCTest
 @testable import WeatherForecast
 
 class WFWebserviceHelperTester: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
+    //Test model creation
     func testDayModelCreation(){
         let fileName = "DayModel"
         let webServiceHelper = WebServiceHelper()
         let dict = webServiceHelper.readJsonFile(fileName: fileName) as! Dictionary<String,AnyObject>
         let dayModel : DayModel = webServiceHelper.getDayModel(item: dict, city: "chennai", country: "IN")
         XCTAssertEqual([dayModel.city ?? "", dayModel.country ?? ""], ["chennai", "IN"], "Day model variables compared")
+    }
+    
+    //Test web service calls
+    func testWebserviceResponse(){
+        let webServiceHelper:WebServiceHelper = WebServiceHelper()
+        webServiceHelper.getWetherData(completionHandler: {(response: [DayModel]?) -> Void in
+            XCTAssertNotNil(response)
+        })
+    }
+    
+    func testColorExtensionWithValidValue(){
+        let baseBlueColor = UIColor.colorWithHexValue(hexValue: "#3CAEDA")
+        XCTAssertNotNil(baseBlueColor)
+    }
+    
+    func testColorExtensionWithInvalidValue(){
+        let baseBlueColor = UIColor.colorWithHexValue(hexValue: "#")
+        XCTAssertNotNil(baseBlueColor)
+    }
+    
+    func testDateExtension(){
+        let date = Date()
+        let years = date.years(from: Date())
+        XCTAssertEqual(0, years, "comparing years")
     }
     
     
