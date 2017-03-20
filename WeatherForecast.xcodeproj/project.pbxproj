@@ -27,12 +27,12 @@
 		A0B88BE11E5756F4005E4E76 /* WFLoadingSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BE01E5756F4005E4E76 /* WFLoadingSpinner.swift */; };
 		A0B88BE31E57573D005E4E76 /* WFBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BE21E57573D005E4E76 /* WFBaseViewController.swift */; };
 		A0B88BE71E5761F0005E4E76 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BE61E5761F0005E4E76 /* Extensions.swift */; };
+		A0C850961E7FEE070049821E /* WFAppTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C850951E7FEE070049821E /* WFAppTester.swift */; };
 		A0DAABF11E600E99006D4615 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DAABF01E600E99006D4615 /* NetworkController.swift */; };
 		A0DAABF51E6041F9006D4615 /* DayModel.json in Resources */ = {isa = PBXBuildFile; fileRef = A0DAABF41E6041F9006D4615 /* DayModel.json */; };
 		A0F5A69F1E76945E006F63B9 /* Temperature.json in Resources */ = {isa = PBXBuildFile; fileRef = A0F5A69E1E76945E006F63B9 /* Temperature.json */; };
 		A0F5A6A11E7694D9006F63B9 /* Weather.json in Resources */ = {isa = PBXBuildFile; fileRef = A0F5A6A01E7694D9006F63B9 /* Weather.json */; };
 		A0F5A6A31E7695B2006F63B9 /* Wind.json in Resources */ = {isa = PBXBuildFile; fileRef = A0F5A6A21E7695B2006F63B9 /* Wind.json */; };
-		A0F5A6E91E7FEB71006F63B9 /* WFApplicationTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F5A6E51E7FE86F006F63B9 /* WFApplicationTester.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,12 +86,12 @@
 		A0B88BE01E5756F4005E4E76 /* WFLoadingSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFLoadingSpinner.swift; sourceTree = "<group>"; };
 		A0B88BE21E57573D005E4E76 /* WFBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFBaseViewController.swift; sourceTree = "<group>"; };
 		A0B88BE61E5761F0005E4E76 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A0C850951E7FEE070049821E /* WFAppTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFAppTester.swift; sourceTree = "<group>"; };
 		A0DAABF01E600E99006D4615 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		A0DAABF41E6041F9006D4615 /* DayModel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = DayModel.json; path = Resources/DayModel.json; sourceTree = "<group>"; };
 		A0F5A69E1E76945E006F63B9 /* Temperature.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Temperature.json; path = Resources/Temperature.json; sourceTree = "<group>"; };
 		A0F5A6A01E7694D9006F63B9 /* Weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Weather.json; path = Resources/Weather.json; sourceTree = "<group>"; };
 		A0F5A6A21E7695B2006F63B9 /* Wind.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Wind.json; path = Resources/Wind.json; sourceTree = "<group>"; };
-		A0F5A6E51E7FE86F006F63B9 /* WFApplicationTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFApplicationTester.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,8 +163,8 @@
 		A0B88AE11E55B42B005E4E76 /* WeatherForecastTests */ = {
 			isa = PBXGroup;
 			children = (
-				A0F5A6E51E7FE86F006F63B9 /* WFApplicationTester.swift */,
 				A0B88AE41E55B42B005E4E76 /* Info.plist */,
+				A0C850951E7FEE070049821E /* WFAppTester.swift */,
 			);
 			path = WeatherForecastTests;
 			sourceTree = "<group>";
@@ -412,7 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0F5A6E91E7FEB71006F63B9 /* WFApplicationTester.swift in Sources */,
+				A0C850961E7FEE070049821E /* WFAppTester.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
