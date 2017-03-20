@@ -32,7 +32,7 @@
 		A0F5A69F1E76945E006F63B9 /* Temperature.json in Resources */ = {isa = PBXBuildFile; fileRef = A0F5A69E1E76945E006F63B9 /* Temperature.json */; };
 		A0F5A6A11E7694D9006F63B9 /* Weather.json in Resources */ = {isa = PBXBuildFile; fileRef = A0F5A6A01E7694D9006F63B9 /* Weather.json */; };
 		A0F5A6A31E7695B2006F63B9 /* Wind.json in Resources */ = {isa = PBXBuildFile; fileRef = A0F5A6A21E7695B2006F63B9 /* Wind.json */; };
-		A0F5A6E61E7FE86F006F63B9 /* WFApplicationTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F5A6E51E7FE86F006F63B9 /* WFApplicationTester.swift */; };
+		A0F5A6E91E7FEB71006F63B9 /* WFApplicationTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F5A6E51E7FE86F006F63B9 /* WFApplicationTester.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -412,7 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0F5A6E61E7FE86F006F63B9 /* WFApplicationTester.swift in Sources */,
+				A0F5A6E91E7FEB71006F63B9 /* WFApplicationTester.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
