@@ -28,11 +28,11 @@
 		A0B88BE31E57573D005E4E76 /* WFBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BE21E57573D005E4E76 /* WFBaseViewController.swift */; };
 		A0B88BE71E5761F0005E4E76 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B88BE61E5761F0005E4E76 /* Extensions.swift */; };
 		A0DAABF11E600E99006D4615 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DAABF01E600E99006D4615 /* NetworkController.swift */; };
-		A0DAABF31E604147006D4615 /* WFApplicationTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DAABF21E604147006D4615 /* WFApplicationTester.swift */; };
 		A0DAABF51E6041F9006D4615 /* DayModel.json in Resources */ = {isa = PBXBuildFile; fileRef = A0DAABF41E6041F9006D4615 /* DayModel.json */; };
 		A0F5A69F1E76945E006F63B9 /* Temperature.json in Resources */ = {isa = PBXBuildFile; fileRef = A0F5A69E1E76945E006F63B9 /* Temperature.json */; };
 		A0F5A6A11E7694D9006F63B9 /* Weather.json in Resources */ = {isa = PBXBuildFile; fileRef = A0F5A6A01E7694D9006F63B9 /* Weather.json */; };
 		A0F5A6A31E7695B2006F63B9 /* Wind.json in Resources */ = {isa = PBXBuildFile; fileRef = A0F5A6A21E7695B2006F63B9 /* Wind.json */; };
+		A0F5A6E61E7FE86F006F63B9 /* WFApplicationTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F5A6E51E7FE86F006F63B9 /* WFApplicationTester.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,11 +87,11 @@
 		A0B88BE21E57573D005E4E76 /* WFBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFBaseViewController.swift; sourceTree = "<group>"; };
 		A0B88BE61E5761F0005E4E76 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A0DAABF01E600E99006D4615 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
-		A0DAABF21E604147006D4615 /* WFApplicationTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFApplicationTester.swift; sourceTree = "<group>"; };
 		A0DAABF41E6041F9006D4615 /* DayModel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = DayModel.json; path = Resources/DayModel.json; sourceTree = "<group>"; };
 		A0F5A69E1E76945E006F63B9 /* Temperature.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Temperature.json; path = Resources/Temperature.json; sourceTree = "<group>"; };
 		A0F5A6A01E7694D9006F63B9 /* Weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Weather.json; path = Resources/Weather.json; sourceTree = "<group>"; };
 		A0F5A6A21E7695B2006F63B9 /* Wind.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Wind.json; path = Resources/Wind.json; sourceTree = "<group>"; };
+		A0F5A6E51E7FE86F006F63B9 /* WFApplicationTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WFApplicationTester.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,8 +163,8 @@
 		A0B88AE11E55B42B005E4E76 /* WeatherForecastTests */ = {
 			isa = PBXGroup;
 			children = (
+				A0F5A6E51E7FE86F006F63B9 /* WFApplicationTester.swift */,
 				A0B88AE41E55B42B005E4E76 /* Info.plist */,
-				A0DAABF21E604147006D4615 /* WFApplicationTester.swift */,
 			);
 			path = WeatherForecastTests;
 			sourceTree = "<group>";
@@ -321,6 +321,7 @@
 					A0B88ADD1E55B42B005E4E76 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = Z3Y3V2UTC6;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = A0B88AC91E55B42B005E4E76;
 					};
@@ -411,7 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0DAABF31E604147006D4615 /* WFApplicationTester.swift in Sources */,
+				A0F5A6E61E7FE86F006F63B9 /* WFApplicationTester.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,11 +588,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = Z3Y3V2UTC6;
 				INFOPLIST_FILE = WeatherForecastTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.WeatherForecastTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherForecast.app/WeatherForecast";
 			};
@@ -602,6 +605,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = Z3Y3V2UTC6;
 				INFOPLIST_FILE = WeatherForecastTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
